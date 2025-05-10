@@ -7,11 +7,11 @@ import CartDrawer from '../Layout/CartDrawer'
 
 const NavBar = () => {
     
-        const [openDrawer, setOpenDrawer] = useState(false)
+    const [openDrawer, setOpenDrawer] = useState(false)
     
-        const toggleCartDrawer = () => {
-            setOpenDrawer(!openDrawer)
-        }
+    const toggleCartDrawer = () => {
+        setOpenDrawer(!openDrawer)
+    }
 
   return (
     <>
@@ -27,8 +27,6 @@ const NavBar = () => {
                 <Link to="#" className="text-gray-600 hover:text-black text-sm font-medium uppercase">Tea</Link>
 
                 <Link to="#" className="text-gray-600 hover:text-black text-sm font-medium uppercase">Juices</Link>
-
-                <Link to="#" className="text-gray-600 hover:text-black text-sm font-medium uppercase">Salads</Link>
             </div>
 
             <div className="flex items-center space-x-4">
@@ -36,7 +34,7 @@ const NavBar = () => {
                     <HiOutlineUser className="h-6 w-6 text-gray-700" />
                 </Link>
                 <button onClick={toggleCartDrawer} className="relative hover:text-black">
-                    <HiOutlineShoppingBag className="h-6 w-6 text-gray-700" />
+                    <HiOutlineShoppingBag className="h-6 w-6 text-gray-700 cursor-pointer" />
                     <span className="absolute -top-1 bg-red-700 text-white text-xs rounded-full px-2 py-0.5">4</span>
                 </button>
 
